@@ -107,10 +107,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-		for(i = 0 ; i<4 ; i++)
+		for(i = 0 ; i<20 ; i++)
 		{
 				HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_5);
-				HAL_Delay(500);
+				HAL_Delay(50);
 		}
 		IAP_jumpApp(0x8008000);
   /* USER CODE END 2 */
